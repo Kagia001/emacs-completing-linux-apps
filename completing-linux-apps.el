@@ -13,7 +13,7 @@
 
 These are found by recursively searching xdg data dirs for files ending in .desktop"
   (mapcan
-   (lambda (f) (when (f-directory-p f) (directory-files-recursively f ".*\.desktop$")))
+   (lambda (f) (ignore-errors (directory-files-recursively f ".*\.desktop$")))
    (xdg-data-dirs)))
 
 
