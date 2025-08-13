@@ -1,4 +1,4 @@
 * completing-linux-apps
-Simple app launcher using completing-read to select from xdg desktop entries. If no entries match, the input is run as an async shell command.
+Simple app launcher using completing-read to select from xdg desktop entries. If no entries match, the input is run as an async shell command. Requires [[https://github.com/jceb/dex][dex]] and emacs >= 26.1.
 ** Usage
 The main function is ~completing-linux-apps-run-program~. When a new program is installed, or a desktop file is otherwise modified, you have to run ~completing-linux-apps-clear-cache~ to make completing-linux-apps aware.
